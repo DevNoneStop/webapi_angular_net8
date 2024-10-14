@@ -16,7 +16,7 @@ var dbPassword = Environment.GetEnvironmentVariable("DB_PASSWORD");
 
 // Add services to the container.
 var conString = $"server={dbHost};port=3306;database={dbName};user=root;password={dbPassword}";
-builder.Services.AddDbContext<AppDbContext>(opt => opt.UseMySql(conString,ServerVersion.AutoDetect(conString)));
+builder.Services.AddDbContext<AppDbContext>(opt => opt.UseMySql(conString, ServerVersion.AutoDetect(conString)));
 
 // Add the jwt services.
 var JWTSetting = builder.Configuration.GetSection("JWTSetting");
@@ -25,32 +25,36 @@ builder.Services.AddIdentity<AppUser, IdentityRole>()
     .AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders();
 
-builder.Services.AddAuthentication(opt => {
+builder.Services.AddAuthentication(opt =>
+{
     opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
     opt.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-}).AddJwtBearer(opt => {
+}).AddJwtBearer(opt =>
+{
     opt.SaveToken = true;
     opt.RequireHttpsMetadata = false;
-    opt.TokenValidationParameters = new TokenValidationParameters {
+    opt.TokenValidationParameters = new TokenValidationParameters
+    {
         ValidateIssuer = true,
-        ValidateLifetime = true,
         ValidateAudience = true,
+        ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        ValidAudience = JWTSetting["ValidaAudience"],
+        ValidAudience = JWTSetting["ValidAudience"],
         ValidIssuer = JWTSetting["ValidIssuer"],
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JWTSetting.GetSection("SecretKey").Value!))
-
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JWTSetting.GetSection("securityKey").Value!))
     };
-}); 
+});
 
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(c => {
-    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme{
+builder.Services.AddSwaggerGen(c =>
+{
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
         Description = @"JWT Authorization Example: Bearer yesyesyesyesyes",
         Name = "Authorization",
         In = ParameterLocation.Header,
@@ -61,7 +65,7 @@ builder.Services.AddSwaggerGen(c => {
     c.AddSecurityRequirement(new OpenApiSecurityRequirement(){
         {
         new OpenApiSecurityScheme{
-            Reference = new OpenApiReference 
+            Reference = new OpenApiReference
             {
                 Type = ReferenceType.SecurityScheme,
                 Id = "Bearer"
