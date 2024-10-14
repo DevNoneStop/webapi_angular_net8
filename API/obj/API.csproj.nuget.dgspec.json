@@ -1,25 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lgaompe/Documents/Dev/webapi_angular_net8/API/API.csproj": {}
+    "C:\\Users\\brandon.smith\\source\\repos\\webapi_angular_net8\\API\\API.csproj": {}
   },
   "projects": {
-    "/Users/lgaompe/Documents/Dev/webapi_angular_net8/API/API.csproj": {
+    "C:\\Users\\brandon.smith\\source\\repos\\webapi_angular_net8\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lgaompe/Documents/Dev/webapi_angular_net8/API/API.csproj",
+        "projectUniqueName": "C:\\Users\\brandon.smith\\source\\repos\\webapi_angular_net8\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "/Users/lgaompe/Documents/Dev/webapi_angular_net8/API/API.csproj",
-        "packagesPath": "/Users/lgaompe/.nuget/packages/",
-        "outputPath": "/Users/lgaompe/Documents/Dev/webapi_angular_net8/API/obj/",
+        "projectPath": "C:\\Users\\brandon.smith\\source\\repos\\webapi_angular_net8\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\brandon.smith\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\brandon.smith\\source\\repos\\webapi_angular_net8\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/lgaompe/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\brandon.smith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -95,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
