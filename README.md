@@ -2,7 +2,7 @@
 
 Build a Secure App with Angular 18 &amp; ASP .NET 8
 
-# instractions to run the app in Docker
+# instructions to run the app in Docker
 
 - open your docker application locally on your machine
 - on vscode navigate to the root folder and run the following commands:
@@ -11,7 +11,7 @@ Build a Secure App with Angular 18 &amp; ASP .NET 8
 - To stop and remove all containers defined in your docker-compose.yml, use:
   - docker-compose down
 
-# instractions to merge
+# instructions to merge
 
 The following instruction are follow when merging to prj-dev
 
