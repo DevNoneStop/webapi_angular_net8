@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\LocalLibrary\\webapi_angular_net8\\api\\API.csproj": {}
+    "C:\\LocalLibrary\\webapi_angular_net8\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\LocalLibrary\\webapi_angular_net8\\api\\API.csproj": {
+    "C:\\LocalLibrary\\webapi_angular_net8\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\LocalLibrary\\webapi_angular_net8\\api\\API.csproj",
+        "projectUniqueName": "C:\\LocalLibrary\\webapi_angular_net8\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\LocalLibrary\\webapi_angular_net8\\api\\API.csproj",
+        "projectPath": "C:\\LocalLibrary\\webapi_angular_net8\\API\\API.csproj",
         "packagesPath": "C:\\Users\\lesego.gaompe\\.nuget\\packages\\",
-        "outputPath": "C:\\LocalLibrary\\webapi_angular_net8\\api\\obj\\",
+        "outputPath": "C:\\LocalLibrary\\webapi_angular_net8\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lesego.gaompe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -48,35 +48,35 @@
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )"
-            },
-            "Pomelo.EntityFrameworkCore.MySql": {
-              "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.10, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.9.0, )"
             }
           },
           "imports": [
