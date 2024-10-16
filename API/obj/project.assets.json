@@ -3205,19 +3205,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\brandon.smith\\.nuget\\packages\\": {}
+    "C:\\Users\\lesego.gaompe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brandon.smith\\source\\repos\\webapi_angular_net8\\API\\API.csproj",
+      "projectUniqueName": "C:\\LocalLibrary\\webapi_angular_net8\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\brandon.smith\\source\\repos\\webapi_angular_net8\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\brandon.smith\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brandon.smith\\source\\repos\\webapi_angular_net8\\API\\obj\\",
+      "projectPath": "C:\\LocalLibrary\\webapi_angular_net8\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\lesego.gaompe\\.nuget\\packages\\",
+      "outputPath": "C:\\LocalLibrary\\webapi_angular_net8\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\brandon.smith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lesego.gaompe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3301,7 +3301,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
