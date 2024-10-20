@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\LocalLibrary\\webapi_angular_net8\\API\\API.csproj": {}
+    "/Users/lgaompe/Documents/Dev/webapi_angular_net8/API/API.csproj": {}
   },
   "projects": {
-    "C:\\LocalLibrary\\webapi_angular_net8\\API\\API.csproj": {
+    "/Users/lgaompe/Documents/Dev/webapi_angular_net8/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\LocalLibrary\\webapi_angular_net8\\API\\API.csproj",
+        "projectUniqueName": "/Users/lgaompe/Documents/Dev/webapi_angular_net8/API/API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\LocalLibrary\\webapi_angular_net8\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\lesego.gaompe\\.nuget\\packages\\",
-        "outputPath": "C:\\LocalLibrary\\webapi_angular_net8\\API\\obj\\",
+        "projectPath": "/Users/lgaompe/Documents/Dev/webapi_angular_net8/API/API.csproj",
+        "packagesPath": "/Users/lgaompe/.nuget/packages/",
+        "outputPath": "/Users/lgaompe/Documents/Dev/webapi_angular_net8/API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lesego.gaompe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/lgaompe/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -48,35 +45,35 @@
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )"
-            },
-            "Pomelo.EntityFrameworkCore.MySql": {
-              "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.10, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.9.0, )"
             }
           },
           "imports": [
@@ -98,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
