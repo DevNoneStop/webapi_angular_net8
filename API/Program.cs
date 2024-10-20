@@ -10,13 +10,13 @@ using Microsoft.OpenApi.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 //Database Context Dependency Injection
-var dbHost = Environment.GetEnvironmentVariable("DB_HOST") ?? "localhost";
-var dbName = Environment.GetEnvironmentVariable("DB_NAME");
-var dbPassword = Environment.GetEnvironmentVariable("DB_PASSWORD");
+// var dbHost = Environment.GetEnvironmentVariable("DB_HOST") ?? "localhost";
+// var dbName = Environment.GetEnvironmentVariable("DB_NAME");
+// var dbPassword = Environment.GetEnvironmentVariable("DB_PASSWORD");
 
 // Add services to the container.
-var conString = $"server={dbHost};port=3306;database={dbName};user=root;password={dbPassword}";
-builder.Services.AddDbContext<AppDbContext>(opt => opt.UseMySql(conString, ServerVersion.AutoDetect(conString)));
+// var conString = $"server={dbHost};port=3306;database={dbName};user=root;password={dbPassword}";
+builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlite("Data Source=AuthDB.db"));
 
 // Add the jwt services.
 var JWTSetting = builder.Configuration.GetSection("JWTSetting");
